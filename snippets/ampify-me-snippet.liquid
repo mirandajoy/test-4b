@@ -1,0 +1,7 @@
+
+{% if template contains 'product' %}    
+	{% assign amp_path = 'products/' | append: product.handle %}
+{% endif %}
+{% if amp_path %}    
+<link rel="amphtml" href="{{ 'https://amp.ampifyme.com/miranda-test-4/' | append: amp_path  }}">
+{% endif %}
